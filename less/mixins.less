@@ -1,1 +1,29 @@
 // Mixins in here
+
+//fart noise, not needed, but in use.
+.flex(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.welcome(@paddingL, @paddingR){
+    padding-left: @paddingL;
+    padding-right: @paddingR;
+    width: 66%;
+}
+
+
+//button mixins
+.custom-btn(@bgcolor, @width, @fontcolor){
+    display: flex;
+    justify-content: space-evenly;
+    width: @width;
+    background-color: @bgcolor;
+    font-size: 1.8rem;
+    height: 7.6vh;
+    align-items: center;
+    color: @fontcolor;
+    border-radius: 13px;
+
+}
