@@ -181,7 +181,7 @@ button {
   border-radius: 13px;
 }
 button:hover {
-  background-color: #ededed;
+  background-color: #b3b3b3;
   color: teal;
 }
 @media (max-width: 500px) {
@@ -197,7 +197,7 @@ button:hover {
     border-radius: 13px;
   }
   button:hover {
-    background-color: #ededed;
+    background-color: #b3b3b3;
     color: #00c4c4;
   }
 }
