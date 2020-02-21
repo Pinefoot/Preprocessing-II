@@ -169,6 +169,38 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+button {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  background-color: teal;
+  font-size: 1.8rem;
+  height: 7.6vh;
+  align-items: center;
+  color: white;
+  border-radius: 13px;
+}
+button:hover {
+  background-color: #ededed;
+  color: teal;
+}
+@media (max-width: 500px) {
+  button {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #00c4c4;
+    font-size: 1.8rem;
+    height: 7.6vh;
+    align-items: center;
+    color: white;
+    border-radius: 13px;
+  }
+  button:hover {
+    background-color: #ededed;
+    color: #00c4c4;
+  }
+}
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -204,6 +236,17 @@ nav a {
   nav a {
     display: flex;
   }
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
 }
 .home {
   display: flex;
@@ -339,26 +382,4 @@ nav a {
     align-items: flex-start;
     width: 100%;
   }
-}
-.home .content-pick .destination .btn {
-  display: flex;
-  justify-content: space-evenly;
-  width: 80%;
-  background-color: teal;
-  font-size: 1.8rem;
-  height: 7.6vh;
-  align-items: center;
-  color: white;
-  border-radius: 13px;
-}
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
-}
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
 }
