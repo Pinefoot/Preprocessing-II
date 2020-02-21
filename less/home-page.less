@@ -2,21 +2,31 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
     
+    @mobile @phone{
+      display: flex;
+      flex-direction: column;
+    }
 
     
 
     .wrapper{
-   
-      width: 100%;
+      
+      width:100%;
       padding-bottom: 1%;
-    
+      @media @phone{
+        display: flex;
+        justify-content: center;
+        
+        
+        
+    }
+      
   
   }
 
   .topbus{
-      .welcome(9%,9%);
+     
       padding-bottom:1%;
       border-top: 2px dashed grey;
   
@@ -25,8 +35,7 @@
   .busIntro{
     padding-top:1%;
     border-bottom: 2px dashed grey;
-    margin-right: 26%;
-    margin-left: 26%;
+    
 
 }
 
@@ -35,6 +44,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
     
 
    
@@ -42,11 +57,23 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -57,6 +84,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -66,15 +98,32 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+      
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+    
 
     img {
       border-radius: 10px;
+      
+     
     }
   }
 
@@ -83,12 +132,24 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media  @phone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+    }
     
 
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
 
       .btn{
         .custom-btn( teal, 80%, white)
